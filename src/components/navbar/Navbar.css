@@ -1,0 +1,66 @@
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar img {
+    width: 70px;
+    height: auto;
+    margin-left: 40px;
+    position: relative;
+    opacity: 0.75;
+    border-radius: 5%;
+    background: linear-gradient(#161513, #161513), linear-gradient(267deg, #841cc4 0.36%, #f98b37 102.06%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: transform 0.5s, opacity 0.5s, border-color 0.5s; /* Add transition effect */
+}
+
+.nav-bar img:hover {
+    transform: scale(1.15); /* Scale up the image on hover */
+    opacity: 1; /* Change opacity on hover */
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-family: "outfit", sans-serif;
+    font-size: 20px;
+}
+.nav-menu li{
+    padding: 3px 8px;
+    border-radius: 50px;
+    cursor: default;
+    transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease, border 0.2s;
+}
+.nav-menu li:hover{
+    transform: scale(1.1);
+    border: 2px solid #f76f07;
+    background: linear-gradient(267deg, #571183 10%, #f76f07 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-connect{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    opacity: 0.85;
+    background: linear-gradient(267deg, #571183 0.36%, #f76f07 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-connect:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}

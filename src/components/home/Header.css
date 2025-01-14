@@ -1,0 +1,98 @@
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 200px;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+.profile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/bg_dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-attachment: fixed;
+    opacity: 0.5;
+    z-index: -1; 
+}
+.profile-picture img {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    border: 5px solid transparent;
+    background: linear-gradient(white, white), linear-gradient(267deg, #f56f08 30%, #63089b 102.06%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture img:hover{
+    transform: scale(1.02); /* Scale up the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.4); /* Enhance the box shadow on hover */
+}
+.profile-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.9;
+}
+.profile-info h1{
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    font-family: serif;
+}
+.profile-info p{
+    width: 100%;
+    text-align: center;
+    font-family: "outfit";
+    font-size: 20px;
+    line-height: 40px;
+}
+.profile-connect{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.contact{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #f76f07 30%, #571183 102.06%);
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.contact:hover{
+    transform: scale(1.05);
+    border: 2px solid white
+}
+.resume{
+    padding: 25px 45px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.resume:hover{
+    transform: scale(1.05);
+    border-color: #f98b37;
+}
