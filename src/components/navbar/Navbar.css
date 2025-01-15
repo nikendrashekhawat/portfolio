@@ -35,7 +35,7 @@
     font-size: 20px;
 }
 .nav-menu li{
-    padding: 3px 8px;
+    padding: 0px 15px;
     border-radius: 50px;
     cursor: default;
     transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease, border 0.2s;

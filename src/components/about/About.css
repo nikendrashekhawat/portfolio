@@ -6,6 +6,7 @@
     color: white;
     gap: 100px;
     opacity: 0.9;
+    padding-top: 50px;
     padding-bottom: 200px;
 }
 .about-header h1{
@@ -27,7 +28,7 @@
     flex-direction: column;
     gap: 20px;
     font-family: "outfit", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
 }
 .about-expertise{
@@ -38,6 +39,7 @@
 .about-expertise h1{
     font-size: 36px;
     font-weight: 500;
+    font-family: "outfit", Arial;
 }
 .skill-grid{
     display: grid;
@@ -61,18 +63,15 @@
     font-family: "outfit", sans-serif;
     font-weight: 500;
 }
-.expertise-icon{
-    transition: transform 0.3s background 0.3s;
+.skills svg {
+    font-size: 36px;
 }
-
+.expertise-icon {
+    transition: transform 0.3s ease;
+}
 .expertise-icon:hover {
     transform: scale(1.08);
-    background: linear-gradient(267deg, #571183 10%, #f76f07 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
-
 .chip {
     color: rgb(39, 40, 34) !important;
     background-color: white !important;
@@ -115,4 +114,49 @@ monospace;
 .flex-chips .MuiChip-root:hover {
     transform: scale(1.01);
     border: 2px solid #f98b37;
+}
+
+.about-certifications {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-certifications h1 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "outfit", Arial;
+}
+
+.certifications-grid {
+    display: flex;
+    gap: 100px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.certification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.certification img {
+    width: 350px;
+    height: 250px;
+    object-fit: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.certification p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "outfit", sans-serif;
+    color: white;
 }
