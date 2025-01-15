@@ -13,9 +13,11 @@ const Projects = () => {
                     <div className="project-overlay">
                         <h3>Project 1</h3>
                         <p>Project 1 Description</p>
-                        <
+                        <div className="project-links">
+                          links
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>

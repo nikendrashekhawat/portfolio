@@ -1,79 +1,11 @@
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLaptopCode, faAngleLeft, faAngleRight, faCloud, faCloudArrowUp} from '@fortawesome/free-solid-svg-icons'
+import { faLaptopCode, faAngleLeft, faAngleRight, faCloud } from '@fortawesome/free-solid-svg-icons'
 import { faDocker, faPython } from '@fortawesome/free-brands-svg-icons'
-import Chip from '@mui/material/Chip';
+import Chip from '@mui/material/Chip'
 import './About.css'
+import { main_tools, python_libraries, devops_tools, cloudtools, certifications } from './skills_data.js'
 
-import project1 from '../../assets/project_1.png';
-import project2 from '../../assets/project_2.png';
-import project3 from '../../assets/project_3.png';
-import project4 from '../../assets/project_4.png';
-import project5 from '../../assets/project_5.png';
-
-const main_tools = [
-  "SQL",
-  "PostgreSQL",
-  "MySQL",
-  "MongoDB",
-  "Python",
-  "R",
-  "Jupyter Notebook",
-  "RStudio",
-  "Excel",
-  "Tableau",
-  "PowerBI",
-]
-
-const python_libraries = [
-  "Pandas",
-  "NumPy",
-  "SciPy",
-  "Statsmodels",
-  "Matplotlib",
-  "Seaborn",
-  "Plotly",
-  "Bokeh",
-  "Dask",
-  "NLTK",
-  "SpaCy",
-  "Scikit-learn",
-  "Tensorflow",
-  "Keras",
-  "PyTorch",
-  "OpenCV"
-]
-
-const devops_tools = [
-  "Linux",
-  "Bash Scripting",
-  "MLOps",
-  "Git",
-  "GitHub Actions",
-  "DVC",
-  "CML",
-  "Docker",
-  "Kubernetes",
-  'Kubeflow',
-  "MLFlow",
-  'PySpark',
-  'Airflow',
-]
-
-const cloudtools = [
-  "BigQuery",
-  "Google Analytics",
-  "Azure Data Factory",
-  "S3"
-]
-
-const certifications = [
-  { name: "Certification 1", img: project1 },
-  { name: "Certification 2", img: project2 },
-  { name: "Certification 3", img: project3 },
-  { name: "Certification 4", img: project4 },
-  { name: "Certification 5", img: project5 },
-];
 
 const ErrorBoundary = ({ children }) => {
   const [hasError, setHasError] = useState(false);
@@ -135,9 +67,9 @@ const About = () => {
           <div className="about-para">
             <p>I graduated with a Bachelor of Science in Electronics from Seneca College, Toronto, Canada.
               I have been working in business and data analytics for the past 4 years. I have worked on 
-              various projects in inventory management, logistics, retail, sales, and marketing.
+              various projects in financial, logistics, retail, sales, inventory, and marketing.
             </p>  
-            <p>Currently, I am learning MLOps. On my inquisitive side, I also have a keen 
+            <p>Moreover, I spend my time working on real-world Machine Learning projects. On my inquisitive side, I also have a keen 
               interest in DNN and Computer Vision.
             </p>
           </div>
