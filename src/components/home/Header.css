@@ -74,25 +74,25 @@
     margin-bottom: 50px;
     margin-top: 30px;
 }
-.contact{
+.profile-connect-contact{
     padding: 25px 45px;
     border-radius: 50px;
     background: linear-gradient(267deg, #f76f07 30%, #571183 102.06%);
     cursor: pointer;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
-.contact:hover{
+.profile-connect-contact:hover{
     transform: scale(1.05);
     border: 2px solid white
 }
-.resume{
+.profile-connect-resume{
     padding: 23px 45px;
     border-radius: 50px;
     border: 2px solid white;
     cursor: pointer;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
-.resume:hover{
+.profile-connect-resume:hover{
     transform: scale(1.05);
     border-color: #f98b37;
 }

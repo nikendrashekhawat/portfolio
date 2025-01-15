@@ -11,8 +11,8 @@ const Profile = () => {
           <h1><span>Nikendra Shekhawat</span></h1>
           <p>Data Scientist | Machine Learning & MLOps Engineer</p>
           <div className="profile-connect">
-            <div className="contact">Connect with me</div>
-            <div className="resume">My resume</div>
+            <div className="profile-connect-contact">Connect with me</div>
+            <div className="profile-connect-resume">My resume</div>
           </div>
         </div>
     </div>
