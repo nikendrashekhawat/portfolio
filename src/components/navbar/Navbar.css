@@ -45,12 +45,11 @@
     padding: 0px 15px;
     border-radius: 50px;
     cursor: default;
-    transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease, border 0.2s;
+    transition: transform 0.5s ease, color 0.5s ease, background 0.5s ease;
 }
 .nav-menu li:hover{
     transform: scale(1.1);
-    border: 2px solid #f76f07;
-    background: linear-gradient(267deg, #571183 10%, #f76f07 100%);
+    background: linear-gradient(267deg, #571183 10%, #f76f07 70%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -61,7 +60,7 @@
     padding: 15px 30px;
     border-radius: 50px;
     opacity: 0.85;
-    background: linear-gradient(267deg, #571183 0.36%, #f76f07 102.06%);
+    background: linear-gradient(267deg, #f76f07 30%, #571183 102.06%);
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;

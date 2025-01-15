@@ -40,6 +40,8 @@ const python_libraries = [
   "Scikit-learn",
   "Tensorflow",
   "Keras",
+  "PyTorch",
+  "OpenCV"
 ]
 
 const devops_tools = [

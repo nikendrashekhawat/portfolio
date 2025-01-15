@@ -4,10 +4,10 @@
     align-items: center;
     flex-direction: column;
     color: white;
-    gap: 130px;
+    gap: 80px;
     opacity: 0.9;
     padding-top: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
 .about-header h1{
     position: relative;
@@ -101,13 +101,10 @@
     transition: transform 0.2s, border 0.2s;
     margin-right: 0.5em;
 }
-
 .flex-chips .MuiChip-outlined {
     background-color: #e0e0e0;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
 .flex-chips .MuiChip-outlined span {
     color: rgb(39, 40, 34);
 }
@@ -162,8 +159,6 @@ monospace;
     transform: scale(1.1);
     opacity: 1;
 }
-
-
 .certifications-grid {
     display: flex;
     gap: 70px;
@@ -172,16 +167,15 @@ monospace;
     justify-content: center;
     transition: transform 0.5s ease-in-out;
 }
-
 .certification {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     opacity: 1;
-    position: relative; /* Add this line */
+    position: relative;
+    cursor: pointer;
 }
-
 .certification img {
     width: 350px;
     height: 250px;
@@ -189,7 +183,6 @@ monospace;
     border-radius: 10px;
     transition: transform 0.5s;
 }
-
 .certification img:hover {
     transform: scale(1.03);
 }
@@ -199,7 +192,7 @@ monospace;
     left: 0;
     width: 100%; /* Adjust width to match the certificate */
     height: 100%; /* Adjust height to match the certificate */
-    background: linear-gradient(rgba(0,0,0, 0.1), #ff8222 102%);
+    background: linear-gradient(rgb(87, 17, 131, 0.2), #f76f07 110%);
     display: flex;
     justify-content: end;
     align-items: center;
