@@ -56,7 +56,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    font-size: 24px;
+    font-size: 22px;
 }
 .skills .title h3{
     font-family: "outfit", sans-serif;
@@ -134,7 +134,7 @@ monospace;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
 }
 .arrow-button-left {
     border: transparent;
@@ -142,6 +142,7 @@ monospace;
     color: white;
     cursor: pointer;
     opacity: 0.8;
+    padding-right: 10px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .arrow-button-left:hover {
@@ -154,6 +155,7 @@ monospace;
     color: white;
     cursor: pointer;
     opacity: 0.8;
+    padding-left: 10px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .arrow-button-right:hover {
@@ -164,7 +166,7 @@ monospace;
 
 .certifications-grid {
     display: flex;
-    gap: 50px;
+    gap: 70px;
     overflow: hidden;
     width: 100%;
     justify-content: center;
@@ -176,8 +178,8 @@ monospace;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 1;
+    position: relative; /* Add this line */
 }
 
 .certification img {
@@ -185,12 +187,36 @@ monospace;
     height: 250px;
     object-fit: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    transition: transform 0.5s;
 }
 
-.certification p {
+.certification img:hover {
+    transform: scale(1.03);
+}
+.certification .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Adjust width to match the certificate */
+    height: 100%; /* Adjust height to match the certificate */
+    background: linear-gradient(rgba(0,0,0, 0.1), #ff8222 102%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.certification:hover .overlay{
+    transform: translateY(0);
+}
+
+.certification h3{
     font-size: 16px;
     font-weight: 500;
     font-family: "outfit", sans-serif;
     color: white;
+    margin: 30px;
 }

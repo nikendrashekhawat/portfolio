@@ -2,9 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    margin: 0px 170px;
     margin-left: 0px;
     margin-right: 0px;
+    padding: 20px 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: linear-gradient(#161513, #161513), linear-gradient(267deg, #841cc4 0.36%, #f98b37 102.06%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -50,7 +57,7 @@
 }
 .nav-connect{
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 40px;
     padding: 15px 30px;
     border-radius: 50px;
     opacity: 0.85;

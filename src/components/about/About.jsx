@@ -205,7 +205,9 @@ const About = () => {
                 {visibleCerts.map((cert, idx) => (
                   <div key={idx} className="certification">
                     <img src={cert.img} alt={cert.name} />
-                    <p>{cert.name}</p>
+                    <div className="overlay">
+                      <h3>{cert.name}</h3>
+                    </div>
                   </div>
                 ))}
               </div>
