@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareFull, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons'
+import { faLaptopCode, faAngleLeft, faAngleRight, faCloud, faCloudArrowUp} from '@fortawesome/free-solid-svg-icons'
+import { faDocker, faPython } from '@fortawesome/free-brands-svg-icons'
 import Chip from '@mui/material/Chip';
 import './About.css'
 
@@ -15,9 +15,10 @@ const main_tools = [
   "SQL",
   "PostgreSQL",
   "MySQL",
+  "MongoDB",
   "Python",
-  "Jupyter Notebook",
   "R",
+  "Jupyter Notebook",
   "RStudio",
   "Excel",
   "Tableau",
@@ -50,15 +51,18 @@ const devops_tools = [
   "DVC",
   "CML",
   "Docker",
-  "PySpark",
+  "Kubernetes",
+  'Kubeflow',
   "MLFlow",
+  'PySpark',
+  'Airflow',
 ]
 
 const cloudtools = [
   "BigQuery",
   "Google Analytics",
   "Azure Data Factory",
-  "Azure"
+  "S3"
 ]
 
 const certifications = [
@@ -94,19 +98,30 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
+    const updateVisibleCerts = () => {
+      const newCerts = certifications.slice(index, index + 3);
+      if (newCerts.length < 3) {
+        newCerts.push(...certifications.slice(0, 3 - newCerts.length));
+      }
+      setVisibleCerts(newCerts);
+    };
+
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % certifications.length);
-      setVisibleCerts((prevCerts) => {
-        const newCerts = certifications.slice(index, index + 3);
-        if (newCerts.length < 3) {
-          newCerts.push(...certifications.slice(0, 3 - newCerts.length));
-        }
-        return newCerts;
-      });
-    }, 3000);
+    }, 5000);
+
+    updateVisibleCerts();
 
     return () => clearInterval(interval);
   }, [index]);
+
+  const handlePrev = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + certifications.length) % certifications.length);
+  };
+
+  const handleNext = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % certifications.length);
+  };
 
   console.log("Rendering About component");
 
@@ -164,17 +179,41 @@ const About = () => {
                   ))}
               </div>
             </div>
+            <div className="skills">
+              <div className="title">
+                <FontAwesomeIcon className='expertise-icon' icon={faCloud} />
+                <h3>Cloud</h3>
+              </div>
+              <p></p>
+              <div className="flex-chips">
+                  {cloudtools.map((label, index) => (
+                    <Chip key={index} className='chip' label={label} />
+                  ))}
+              </div>
+            </div>
           </div>
         </div>
         <div className="about-certifications">
             <h1>Certifications</h1>
-            <div className="certifications-grid">
-              {visibleCerts.map((cert, idx) => (
-                <div key={idx} className="certification">
-                  <img src={cert.img} alt={cert.name} />
-                  <p>{cert.name}</p>
-                </div>
+            <div className="certifications-grid-container">
+            <div className="arrow-button">
+                <button className="arrow-button-left" onClick={handleNext}>
+                  <FontAwesomeIcon icon={faAngleLeft} size='2x' />
+                </button>
+              </div>
+              <div className="certifications-grid">
+                {visibleCerts.map((cert, idx) => (
+                  <div key={idx} className="certification">
+                    <img src={cert.img} alt={cert.name} />
+                    <p>{cert.name}</p>
+                  </div>
                 ))}
+              </div>
+              <div className="arrow-button">
+                <button className="arrow-button-right" onClick={handlePrev}>
+                  <FontAwesomeIcon icon={faAngleRight} size='2x' />
+                </button>
+              </div>
             </div>
           </div>
       </div>

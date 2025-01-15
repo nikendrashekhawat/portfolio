@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     color: white;
-    gap: 100px;
+    gap: 130px;
     opacity: 0.9;
     padding-top: 50px;
     padding-bottom: 200px;
@@ -43,8 +43,8 @@
 }
 .skill-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 }
 .skills{
     display: flex;
@@ -52,7 +52,6 @@
     gap: 10px;
 }
 .skills .title{
-    padding-top: 10px;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -64,13 +63,14 @@
     font-weight: 500;
 }
 .skills svg {
-    font-size: 36px;
+    font-size: 30px;
 }
 .expertise-icon {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .expertise-icon:hover {
     transform: scale(1.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .chip {
     color: rgb(39, 40, 34) !important;
@@ -119,18 +119,52 @@ monospace;
 .about-certifications {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
 .about-certifications h1 {
     font-size: 36px;
     font-weight: 500;
     font-family: "outfit", Arial;
+    position: relative;
 }
+
+.certifications-grid-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.arrow-button-left {
+    border: transparent;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.arrow-button-left:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.arrow-button-right {
+    border: transparent;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.arrow-button-right:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 
 .certifications-grid {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     overflow: hidden;
     width: 100%;
     justify-content: center;
