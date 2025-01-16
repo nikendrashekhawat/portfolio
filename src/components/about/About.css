@@ -131,7 +131,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 }
 .arrow-button-left {
     border: transparent;
@@ -143,7 +143,7 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .arrow-button-left:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     opacity: 1;
 }
 .arrow-button-right {
@@ -156,60 +156,59 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .arrow-button-right:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     opacity: 1;
 }
 .certifications-grid {
-    display: flex;
-    gap: 70px;
-    overflow: hidden;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     justify-content: center;
-    transition: transform 0.5s ease-in-out;
 }
 .certification {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    opacity: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+.certification:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgb(248, 63, 11), 0 0 15px 5px rgba(255, 0, 150, 0.2);
+}
+
 .certification img {
-    width: 350px;
-    height: 250px;
-    object-fit: auto;
-    border-radius: 10px;
-    transition: transform 0.5s;
-}
-.certification img:hover {
-    transform: scale(1.03);
+    width: 100%;
+    object-fit: cover;
 }
 .certification .overlay{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%; /* Adjust width to match the certificate */
-    height: 100%; /* Adjust height to match the certificate */
-    background: linear-gradient(rgb(87, 17, 131, 0.2), #f76f07 110%);
+    width: 100%;
+    height: 100%; 
+    background: linear-gradient(rgba(69, 18, 101, 0.2), #c3380e 110%);
     display: flex;
     justify-content: end;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0px;
     transform: translateY(100%);
     transition: .5s ease;
 }
 .certification:hover .overlay{
     transform: translateY(0);
 }
-
 .certification h3{
+    margin: 20px;
+    padding: 10px;
     font-size: 16px;
     font-weight: 500;
     font-family: "outfit", sans-serif;
-    color: white;
-    margin: 30px;
 }

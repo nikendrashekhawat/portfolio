@@ -4,15 +4,138 @@
     align-items: center;
     flex-direction: column;
     color: white;
-    gap: 50px;
+    gap: 80px;
     opacity: 0.9;
-    padding: 50px;
+    padding-top: 40px;
+    padding-bottom: 150px;
 }
 
-.projects h1{
+.projects h1 {
     position: relative;
     font-size: 50px;
     font-weight: 500;
     text-align: center;
-    padding-bottom: 30px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    text-align: center;
+}
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgb(248, 63, 11), 0 0 15px 10px rgba(255, 0, 150, 0.2);
+}
+.project-container{
+    display: contents;
+}
+.project-box img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+.project-title {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'outfit', sans-serif;
+    font-size: 20px;
+    transition: opacity 0.5s ease;
+}
+.project-box:hover .project-title {
+    opacity: 0;
+}
+.project-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(69, 18, 101, 0.2), #c3380e 110%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 8px;
+    cursor: default;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.project-box:hover .project-overlay{
+    transform: translateY(0);
+}
+.project-overlay h3{
+    font-family: 'outfit', sans-serif;
+    font-size: 28px;
+}
+.project-overlay p{
+    font-family: 'outfit', sans-serif;
+    font-size: 18px;
+}
+.project-overlay .project-tool-chip {
+    color: rgb(39, 40, 34) !important;
+    background-color: rgb(253, 232, 216) !important;
+    font-size: 0.9rem !important;
+    height: 25px !important;
+
+    span {
+        font-family: 'Courier Prime', monospace;
+        color: rgb(39, 40, 34);
+    }
+  
+    svg {
+        height: 15px !important;
+    }
+}
+.project-overlay .project-flex-chips {
+    line-height: 2;
+    margin: 0.5em;
+}
+.project-overlay .project-flex-chips .MuiChip-root {
+    transition: transform 0.2s;
+    margin-right: 0.5em;
+}
+.project-overlay .project-flex-chips .MuiChip-root:hover {
+    transform: scale(1.02);
+}
+
+.project-link-icons{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+    font-size: 24px;
+}
+.project-link-icons a{
+    color: #e0e0e0;
+    text-decoration: none;
+}
+.project-link{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.project-link:hover{
+    transform: scale(1.1);
+}
+.project-code{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.project-code:hover{
+    transform: scale(1.1);
 }

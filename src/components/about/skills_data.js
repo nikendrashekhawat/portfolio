@@ -40,7 +40,7 @@ const python_libraries = [
 
 const devops_tools = [
   "Linux",
-  "Bash Scripting",
+  "Bash",
   "MLOps",
   "Git",
   "GitHub Actions",
