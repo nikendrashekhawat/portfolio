@@ -92,7 +92,7 @@ const About = () => {
             <div className="skills">
               <div className="title">
                 <FontAwesomeIcon className='expertise-icon' icon={faPython} />
-                <h3>Packages</h3>
+                <h3>Frameworks</h3>
               </div>
               <p></p>
               <div className="flex-chips">
@@ -104,7 +104,7 @@ const About = () => {
             <div className="skills">
               <div className="title">
                 <FontAwesomeIcon className='expertise-icon' icon={faDocker} />
-                <h3>DevOps</h3>
+                <h3>MLOps</h3>
               </div>
               <p></p>
               <div className="flex-chips">
