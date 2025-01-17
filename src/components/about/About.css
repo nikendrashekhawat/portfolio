@@ -1,22 +1,24 @@
 .about {
     margin: 0px;
-    padding: 50px 170px;
+    padding: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: white;
     background-color: #201f2086;
     gap: 80px;
     opacity: 0.9;
     padding-top: 100px;
-    padding-bottom: 150px;
+}
+.about-header{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
 .about-header h1{
     position: relative;
     font-size: 50px;
     font-weight: 500;
     text-align: center;
-    padding-bottom: 30px;
 }
 .about-header h1 span{
     font-weight: 600;

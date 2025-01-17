@@ -1,15 +1,14 @@
 .profile {
     margin: 0px;
-    padding: 50px 170px;
+    padding: 150px;
     padding-top: 200px;
     padding-bottom: 200px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 50px;
+    gap: 80px;
     color: #ffffff;
     position: relative;
-    z-index: 1;
 }
 .profile::before {
     content: '';

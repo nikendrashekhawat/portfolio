@@ -1,14 +1,13 @@
 .projects {
     margin: 0px;
-    padding: 50px 170px;
+    padding: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #201f2086;
     gap: 80px;
     opacity: 0.9;
-    padding-top: 40px;
-    padding-bottom: 150px;
+    padding-top: 100px;
 }
 
 .projects h1 {
@@ -20,7 +19,7 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 50px;
 }
 
 .project-box {
