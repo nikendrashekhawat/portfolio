@@ -8,7 +8,7 @@ import projects_data from './projects_data'
 const Projects = () => {
   return (
     <div className='projects'>
-        <h1>Projects</h1>
+        <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project-container">
               {projects_data.map((project, index)=>{

@@ -1,9 +1,10 @@
 .projects {
-    margin: 50px 170px;
+    margin: 0px;
+    padding: 50px 170px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: white;
+    background-color: #201f2086;
     gap: 80px;
     opacity: 0.9;
     padding-top: 40px;
