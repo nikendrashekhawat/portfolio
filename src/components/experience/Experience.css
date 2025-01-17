@@ -1,18 +1,50 @@
 .experience {
-    margin: 50px 170px;
+    margin: 0px;
+    padding: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: white;
-    gap: 50px;
-    opacity: 0.9;
-    padding: 50px;
+    gap: 100px;
+    padding-top: 100px;
 }
-
 .experience h1{
-    position: relative;
     font-size: 50px;
     font-weight: 500;
     text-align: center;
-    padding-bottom: 30px;
+}
+.timeline {
+    width: 100%;
+    font-family: 'outfit', sans-serif;
+    opacity: 0.9;
+    cursor: default;
+}
+.timeline .vertical-timeline--two-columns{
+    width: 100%;
+}
+.job-description{
+    background: transparent;
+    border: 3px solid white;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.5s ease, background 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
+}
+.job-description:hover {
+    transform: scale(1.03);
+    background: linear-gradient(rgba(69, 18, 101, 0.350), #c3380e 110%);
+    border-color: #f83e0ba7;
+    box-shadow: 0 5px 15px rgb(248, 63, 11), 0 0 15px 10px rgba(255, 0, 150, 0.2);
+    opacity: 1;
+}
+.job p{
+    padding-left: 20px;
+}
+.job-title{
+    font-size: 22px;
+}
+.job-date{
+    font-family: 'outline', monospace;
+    color: #f7f1e8 !important;
+    margin-left: 20px;
+    margin-right: 20px;
 }
