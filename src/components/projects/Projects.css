@@ -123,18 +123,15 @@
 }
 .project-link-icons a{
     color: #e0e0e0;
-    text-decoration: none;
 }
 .project-link{
-    cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s ease;
 }
 .project-link:hover{
     transform: scale(1.1);
 }
 .project-code{
-    cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s ease;
 }
 .project-code:hover{
     transform: scale(1.1);
