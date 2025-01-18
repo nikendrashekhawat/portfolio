@@ -10,9 +10,8 @@ const Contact = () => {
         <div className="contact-section">
           <div className="contact-left">
             <h2><span>Let's Discuss</span></h2>
-            <p className='contact-para'>My schedule is currently open for new projects or opportunity. I am readily available 
-              to discuss your project requirements and provide a tailored solution or an idea that you'd like to collaborate on. 
-              Please contact me at your convenience.
+            <p className='contact-para'>My schedule is currently open for new opportunities or projects. I am readily available 
+              to discuss your project requirements or an idea that you'd like to collaborate on. Please contact me at your convenience.
             </p>
             <div className="contact-methods">
               <div className="contact-method-social">
@@ -33,19 +32,21 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="contact-right">
-            <form action="" className="contact-form">
-            <label htmlFor="">Your Name</label>
-            <input type="text" name="name" id="name" placeholder='Enter your name'/>
-            <label htmlFor="">Your Email</label>
-            <input type="email" name="email" id="email" placeholder='Enter your emal'/>
-            <label htmlFor="">Write your message here</label>
-            <textarea name="message" id="message" rows="10" placeholder="Enter your message"></textarea>
+          <form action="" className="contact-right-form">
+            <div className="contact-details">
+              <label htmlFor="">Your Name</label>
+              <input type="text" name="name" id="name" placeholder='Enter your name'/>
+            </div>
+            <div className="contact-details">
+              <label htmlFor="">Your Email</label>
+              <input type="email" name="email" id="email" placeholder='Enter your email'/>
+            </div>
+            <div className="contact-details">
+              <label htmlFor="">Your Message</label>
+              <textarea name="message" id="message" rows="10" placeholder="Enter your message"></textarea>
+            </div>
             <button type="submit" className='contact-submit'>Submit now</button>
-            </form>
-
-          </div>
-
+          </form>
         </div>
     </div>
   )

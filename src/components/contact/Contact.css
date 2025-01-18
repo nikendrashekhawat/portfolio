@@ -15,14 +15,15 @@
 }
 .contact-section{
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: row;
-    gap: 150px;
+    gap: 100px;
 }
 .contact-left{
     display: flex;
     align-items: left;
     flex-direction: column;
+    flex-basis: 50%;
     font-family: 'outfit', sans-serif;
     gap: 10px;
 }
@@ -43,6 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 5px;
 }
 .contact-method-social{
     display: flex;
@@ -55,10 +57,79 @@
     color: #f7f1e8;
 }
 .contact-icon{
+    font-size: 22px;
     cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 .contact-icon:hover {
     transform: scale(1.1);
     color: #e73604;
+    box-shadow: 0 4px 15px rgba(248, 63, 11, 0.5), 0 4px 15px rgba(87, 17, 131, 0.5);
+}
+.contact-method-social p{
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.contact-method-social p:hover{
+    transform: scale(1.02);
+    background: linear-gradient(90deg, #f83f0b 30%, #571183 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-right-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-basis: 50%;
+    gap: 30px;
+    font-family: 'outfit', sans-serif;
+}
+.contact-right-form .contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    label{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    input {
+        border: none;
+        width: 600px;
+        height: 70px;
+        padding-left: 20px;
+        border-radius: 5px;
+        background: #32323c;
+        color: #e7ded1;
+        font-family: 'outfit', sans-serif;
+        font-size: 18px;
+    }
+
+    textarea {
+        padding: 20px;
+        width: 600px;
+        border: none;
+        border-radius: 5px;
+        background: #32323c;
+        color: #e7ded1;
+        font-family: 'output', sans-serif;
+        font-size: 18px;
+
+    }
+}
+.contact-submit{
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #f83f0b 30%, #571183 102.06%);
+    font-size: 22px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-submit:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
