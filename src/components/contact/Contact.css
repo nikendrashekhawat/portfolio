@@ -43,7 +43,7 @@
 .contact-left .contact-methods{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     padding-left: 5px;
 }
 .contact-method-social{
