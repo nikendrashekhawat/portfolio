@@ -79,7 +79,7 @@
     border-radius: 50px;
     background: linear-gradient(267deg, #f83f0b 30%, #571183 102.06%);
     cursor: pointer;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.5s ease, border-color 0.5s ease;
 }
 .profile-connect-contact:hover{
     transform: scale(1.05);
@@ -90,7 +90,7 @@
     border-radius: 50px;
     border: 2px solid white;
     cursor: pointer;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.5s ease, border-color 0.5s ease;
 }
 .profile-connect-resume:hover{
     transform: scale(1.05);

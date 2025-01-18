@@ -6,7 +6,6 @@
     flex-direction: column;
     background-color: #201f2086;
     gap: 80px;
-    opacity: 0.9;
     padding-top: 100px;
 }
 .about-header{
@@ -107,7 +106,7 @@
 }
 .flex-chips .MuiChip-outlined {
     background-color: #e0e0e0;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: "Courier New", monospace;
 }
 .flex-chips .MuiChip-outlined span {
     color: rgb(39, 40, 34);
