@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedinIn, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faInstagram, faXTwitter, faFacebookF, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 import './Contact.css'
 
@@ -20,16 +20,20 @@ const Contact = () => {
                 <a href="https://www.linkedin.com/in/nikendrashekhawat/"><p>nikendrashekhawat</p></a>
               </div>
               <div className="contact-method-social">
-                <a href="https://www.x.com/nikendrr"><FontAwesomeIcon className='contact-icon' icon={faXTwitter} />/</a>
-                <a href="https://www.x.com/nikendrr"><p>nikendrr</p> </a>
+                <a href="https://t.me/nikendrashekhawat"><FontAwesomeIcon className='contact-icon' icon={faTelegram} />/</a>
+                <a href="https://t.me/nikendrashekhawat"><p>nikendrashekhawat</p></a>
               </div>
               <div className="contact-method-social">
                 <a href="https://www.instagram.com/nikendrashekhawat"><FontAwesomeIcon className='contact-icon' icon={faInstagram} />/</a>
                 <a href="https://www.instagram.com/nikendrashekhawat"><p>nikendrashekhawat</p> </a>
               </div>
               <div className="contact-method-social">
-                <a href="https://www.github.com/nikendrashekhawat"><FontAwesomeIcon className='contact-icon' icon={faGithub} />/</a>
-                <a href="https://www.github.com/nikendrashekhawat"><p>nikendrashekhawat</p></a>
+                <a href="https://www.x.com/nikendrr"><FontAwesomeIcon className='contact-icon' icon={faXTwitter} />/</a>
+                <a href="https://www.x.com/nikendrr"><p>nikendrr</p> </a>
+              </div>
+              <div className="contact-method-social">
+                <a href="https://www.facebook.com/nikendrr"><FontAwesomeIcon className='contact-icon' icon={faFacebookF} />/</a>
+                <a href="https://www.facebook.com/nikendrr"><p>nikendrr</p></a>
               </div>
             </div>
           </div>
@@ -39,7 +43,7 @@ const Contact = () => {
               <input type="text" name="name" id="name" placeholder='Enter your name'/>
             </div>
             <div className="contact-details">
-              <label htmlFor="">Your Email / Phone#</label>
+              <label htmlFor="">Your Contact</label>
               <input type="email" name="email" id="email" placeholder='Enter your email / phone#'/>
             </div>
             <div className="contact-details">
