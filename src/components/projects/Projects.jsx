@@ -6,12 +6,13 @@ import Chip from '@mui/material/Chip'
 import projects_data from './projects_data'
 
 const Projects = () => {
+  const reversedProjectData = [...projects_data].reverse(); 
   return (
     <div className='projects'>
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project-container">
-              {projects_data.map((project, index)=>{
+              {reversedProjectData.map((project, index)=>{
                 return (
                   <div className="project-box" key={index}>
                     <img src={project.bg_image} alt=''/>
