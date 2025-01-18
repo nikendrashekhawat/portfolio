@@ -1,10 +1,52 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedinIn, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import './Contact.css'
 
 const Contact = () => {
   return (
     <div className='contact'>
         <h1>Contact</h1>
+        <div className="contact-section">
+          <div className="contact-left">
+            <h2><span>Let's Discuss</span></h2>
+            <p className='contact-para'>My schedule is currently open for new projects or opportunity. I am readily available 
+              to discuss your project requirements and provide a tailored solution or an idea that you'd like to collaborate on. 
+              Please contact me at your convenience.
+            </p>
+            <div className="contact-methods">
+              <div className="contact-method-social">
+                <a href="https://www.linkedin.com/in/nikendrashekhawat/"><FontAwesomeIcon className='contact-icon' icon={faLinkedinIn} aria-hidden="true"/></a>
+                <a href="https://www.linkedin.com/in/nikendrashekhawat/"><p>nikendrashekhawat</p></a>
+              </div>
+              <div className="contact-method-social">
+                <a href="https://www.x.com/nikendrr"><FontAwesomeIcon className='contact-icon' icon={faXTwitter} /> </a>
+                <a href="https://www.x.com/nikendrr"><p>nikendrr</p> </a>
+              </div>
+              <div className="contact-method-social">
+                <a href="https://www.instagram.com/nikendrashekhawat"><FontAwesomeIcon className='contact-icon' icon={faInstagram} /> </a>
+                <a href="https://www.instagram.com/nikendrashekhawat"><p>nikendrashekhawat</p> </a>
+              </div>
+              <div className="contact-method-social">
+                <a href="https://www.github.com/nikendrashekhawat"><FontAwesomeIcon className='contact-icon' icon={faGithub} /></a>
+                <a href="https://www.github.com/nikendrashekhawat"><p>nikendrashekhawat</p></a>
+              </div>
+            </div>
+          </div>
+          <div className="contact-right">
+            <form action="" className="contact-form">
+            <label htmlFor="">Your Name</label>
+            <input type="text" name="name" id="name" placeholder='Enter your name'/>
+            <label htmlFor="">Your Email</label>
+            <input type="email" name="email" id="email" placeholder='Enter your emal'/>
+            <label htmlFor="">Write your message here</label>
+            <textarea name="message" id="message" rows="10" placeholder="Enter your message"></textarea>
+            <button type="submit" className='contact-submit'>Submit now</button>
+            </form>
+
+          </div>
+
+        </div>
     </div>
   )
 }
