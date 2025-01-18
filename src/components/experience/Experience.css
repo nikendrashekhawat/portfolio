@@ -13,7 +13,7 @@
     text-align: center;
 }
 .timeline {
-    width: 100%;
+    width: 95%;
     font-family: 'outfit', sans-serif;
     opacity: 0.9;
     cursor: default;
@@ -27,7 +27,7 @@
     opacity: 0.9;
     cursor: pointer;
     border-radius: 8px;
-    transition: transform 0.5s ease, background 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, background 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease, color 0.5s ease;
 }
 .job-description:hover {
     transform: scale(1.03);
@@ -36,15 +36,41 @@
     box-shadow: 0 5px 15px rgb(248, 63, 11), 0 0 15px 10px rgba(255, 0, 150, 0.2);
     opacity: 1;
 }
-.job p{
-    padding-left: 20px;
-}
-.job-title{
-    font-size: 22px;
-}
-.job-date{
+.job .job-date{
     font-family: 'outline', monospace;
     color: #f7f1e8 !important;
     margin-left: 20px;
     margin-right: 20px;
+}
+.job .job-duties{
+    padding-left: 10px;
+}
+.job-title{
+    font-size: 22px;
+}
+.job .job-tool-chip {
+    color: rgb(39, 40, 34) !important;
+    background-color: #f7f1e8 !important;
+    font-size: 0.9rem !important;
+    height: 25px !important;
+
+    span {
+        font-family: 'Courier Prime', monospace;
+        color: rgb(39, 40, 34);
+    }
+  
+    svg {
+        height: 15px !important;
+    }
+}
+.job-tool-flex-chips {
+    line-height: 2;
+    padding: 10px;
+}
+.job-tool-flex-chips .MuiChip-root {
+    transition: transform 0.2s;
+    margin-right: 0.5em;
+}
+.job-tool-flex-chips .MuiChip-root:hover {
+    transform: scale(1.04);
 }
