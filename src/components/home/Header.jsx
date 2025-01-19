@@ -24,7 +24,6 @@ const Profile = () => {
           <div className="profile-icons">
             <a href="https://www.github.com/nikendrashekhawat"> <FontAwesomeIcon className="profile-icon" icon={faSquareGithub} /></a>
             <a href="https://www.linkedin.com/in/nikendrashekhawat/"> <FontAwesomeIcon className="profile-icon" icon={faLinkedin} /></a>
-            <a href="https://www.kaggle.com/nikendrashekhawat"><FontAwesomeIcon className='profile-icon' icon={faKaggle} /></a>
           </div>
           <h1>Nikendra Shekhawat</h1>
           <p>Data Scientist | Machine Learning Engineer</p>
