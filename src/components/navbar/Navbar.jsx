@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faToggleOn} from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 import logo from '../../assets/logo_dark.png';
 
@@ -121,7 +123,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="nav-connect">Connect with me</div>
+        <div className="nav-theme">
+          <FontAwesomeIcon className="nav-theme-toggle-dark" icon={faToggleOn}/>
+        </div>
       </div>
     </>
   );
