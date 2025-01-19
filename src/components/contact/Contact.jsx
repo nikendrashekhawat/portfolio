@@ -10,26 +10,42 @@ const Contact = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
     const formData = new FormData(event.target);
 
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    if (!name || !email || !message) {
+      alert("Please fill in all the fields before submitting.");
+      setResult("Please fill in all the fields before submitting.");
+      return;
+    }
+
+    setResult("Sending....");
+
     formData.append("access_key", process.env.REACT_APP_FORM_ACCESS_KEY);
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
+        const data = await response.json();
 
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Email Sent Successfully");
-      alert("Email Sent Successfully")
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-      alert(result)
+        if (data.success) {
+          setResult("Email Sent Successfully");
+          alert("Email Sent Successfully")
+          event.target.reset();
+        } else {
+          console.log("Error", data);
+          setResult(data.message);
+          alert(result)
+        }
+    } catch (error) {
+      console.log("Submission Error:", error);
+      setResult("There was an error submitting the form. Please try again later.");
+      alert("There was an error submitting the form. Please try again later.");
     }
   };
 
