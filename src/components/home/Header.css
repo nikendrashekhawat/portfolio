@@ -1,13 +1,12 @@
 .profile {
     margin: 0px;
     padding: 150px;
-    padding-top: 200px;
+    padding-top: 250px;
     padding-bottom: 200px;
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 80px;
-    color: #ffffff;
     position: relative;
 }
 .profile::before {
@@ -22,7 +21,7 @@
     background-repeat: no-repeat;
     background-position: relative;
     background-attachment: fixed;
-    opacity: 0.5;
+    opacity: 0.8;
     z-index: -1; 
 }
 .profile-picture img {
@@ -49,7 +48,25 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    opacity: 0.9;
+}
+.profile-icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    gap: 15px;
+}
+.profile-icon{
+    cursor: pointer;
+    font-size: 28px;
+    color: #e0e0e0;
+    transition: transform 0.5s ease;
+}
+.profile-icon:hover{
+    transform: scale(1.1);
+
 }
 .profile-info h1{
     width: 100%;
@@ -60,19 +77,19 @@
 }
 .profile-info p{
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family: "outfit";
     font-size: 20px;
-    line-height: 40px;
+    padding-left: 20px;
 }
 .profile-connect{
     display: flex;
     align-items: center;
-    gap: 25px;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 30px;
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 50px;
-    margin-top: 30px;
 }
 .profile-connect-contact{
     padding: 25px 45px;
