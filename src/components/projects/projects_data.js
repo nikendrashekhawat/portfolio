@@ -27,51 +27,6 @@ const projects_data = [
         tools: ['React', 'Node.js', 'Express', 'MongoDB'],
         link: 'https://www.linkedin.com/in/nikendrashekhawat/',
         github:'https://www.github.com/nikendrashekhawat'
-    },
-    {
-        id: 4,
-        bg_image: project1,
-        title: 'Blog Website',
-        description: 'A blog website that allows users to create, edit, and delete blog posts.',
-        tools: ['React', 'Node.js', 'Express', 'MongoDB'],
-        link: 'https://www.linkedin.com/in/nikendrashekhawat/',
-        github:'https://www.github.com/nikendrashekhawat'
-    },
-    {
-        id: 5,
-        bg_image: project1,
-        title: 'Social Media App',
-        description: 'A social media app that allows users to create, edit, and delete posts.',
-        tools: ['React', 'Node.js', 'Express', 'MongoDB'],
-        link: 'https://www.linkedin.com/in/nikendrashekhawat/',
-        github:'https://www.github.com/nikendrashekhawat'
-    },
-    {
-        id: 6,
-        bg_image: project1,
-        title: 'Chat Application',
-        description: 'A real-time chat application that allows users to chat with each other.',
-        tools: ['React', 'Node.js', 'Express', 'MongoDB'],
-        link: 'https://www.linkedin.com/in/nikendrashekhawat/',
-        github: 'https://www.github.com/nikendrashekhawat'
-    },
-    {
-        id: 5,
-        bg_image: project1,
-        title: 'Social Media App',
-        description: 'A social media app that allows users to create, edit, and delete posts.',
-        tools: ['React', 'Node.js', 'Express', 'MongoDB'],
-        link: 'https://www.linkedin.com/in/nikendrashekhawat/',
-        github:'https://www.github.com/nikendrashekhawat'
-    },
-    {
-        id: 6,
-        bg_image: project1,
-        title: 'Chat Application',
-        description: 'A real-time chat application that allows users to chat with each other.',
-        tools: ['React', 'Node.js', 'Express', 'MongoDB'],
-        link: 'https://www.linkedin.com/in/nikendrashekhawat/',
-        github: 'https://www.github.com/nikendrashekhawat'
     }
 ];
 
