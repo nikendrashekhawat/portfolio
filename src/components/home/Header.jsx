@@ -1,7 +1,7 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareGithub, faLinkedin, faKaggle} from '@fortawesome/free-brands-svg-icons';
+import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import './Header.css'
 import profile_image from '../../assets/profile_img.png'
