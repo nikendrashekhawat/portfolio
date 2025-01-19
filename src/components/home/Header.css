@@ -77,10 +77,9 @@
 }
 .profile-info p{
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-family: "outfit";
     font-size: 20px;
-    padding-left: 20px;
 }
 .profile-connect{
     display: flex;
@@ -103,11 +102,18 @@
     border: 2px solid white
 }
 .profile-connect-resume{
-    padding: 23px 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px 45px;
     border-radius: 50px;
     border: 2px solid white;
     cursor: pointer;
     transition: transform 0.5s ease, border-color 0.5s ease;
+}
+.download-icon-resume{
+    font-size: 18px;
 }
 .profile-connect-resume:hover{
     transform: scale(1.05);
