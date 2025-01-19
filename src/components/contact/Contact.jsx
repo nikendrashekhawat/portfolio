@@ -17,8 +17,8 @@ const Contact = () => {
     const message = formData.get('message');
 
     if (!name || !email || !message) {
-      alert("Please fill in all the fields before submitting.");
-      setResult("Please fill in all the fields before submitting.");
+      alert("Missing information.\nPlease fill in all the fields before submitting.");
+      setResult("Missing information.\nPlease fill in all the fields before submitting.");
       return;
     }
 
