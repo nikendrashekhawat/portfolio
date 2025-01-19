@@ -28,11 +28,12 @@ const Profile = () => {
           <h1>Nikendra Shekhawat</h1>
           <p>Data Scientist | Machine Learning Engineer</p>
           <div className="profile-connect">
-            <div className="profile-connect-contact">
-              <AnchorLink className='anchor-link' offset='50' href='#contact'>
-                <p>Connect with me</p>
-                </AnchorLink>
-              </div>
+            <AnchorLink className='anchor-link' offset='50' href='#contact'>
+              <div className="profile-connect-contact">
+                  <p>Connect with me</p>
+                  
+                </div>
+            </AnchorLink>
             <div 
             className="profile-connect-resume"
             onClick={handleDownload}
