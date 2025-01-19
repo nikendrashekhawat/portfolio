@@ -57,8 +57,6 @@ const About = () => {
     setIndex((prevIndex) => (prevIndex + 1) % certifications.length);
   };
 
-  console.log("Rendering About component");
-
   return (
     <ErrorBoundary>
       <div id="about" className="about">
