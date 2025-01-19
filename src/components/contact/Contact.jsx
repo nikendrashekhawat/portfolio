@@ -5,7 +5,35 @@ import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 import './Contact.css'
 
 const Contact = () => {
-  return (
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", process.env.REACT_APP_FORM_ACCESS_KEY);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Email Sent Successfully");
+      alert("Email Sent Successfully")
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+      alert(result)
+    }
+  };
+
+  return ( 
     <div id="contact" className='contact'>
         <h1>Contact</h1>
         <div className="contact-section">
@@ -37,14 +65,14 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <form action="" className="contact-right-form">
+          <form onSubmit={onSubmit} className="contact-right-form">
             <div className="contact-details">
               <label htmlFor="">Your Name</label>
               <input type="text" name="name" id="name" placeholder='Enter your name'/>
             </div>
             <div className="contact-details">
               <label htmlFor="">Your Contact</label>
-              <input type="email" name="email" id="email" placeholder='Enter your email / phone#'/>
+              <input type="text" name="email" id="email" placeholder='Enter your email / phone#'/>
             </div>
             <div className="contact-details">
               <label htmlFor="">Your Message</label>
