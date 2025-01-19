@@ -11,7 +11,7 @@ import work_history from './work_history_data';
 const Experience = () => {
         const reversedWorkHistory = [...work_history].reverse(); 
         return (
-                <div className="experience">
+                <div id="experience" className="experience">
                 <h1>Experience</h1>
                 <div className="timeline">
                         <VerticalTimeline className="timeline-vertical" lineColor="linear-gradient(180deg, #f83f0b 10%, #571183 100%)">

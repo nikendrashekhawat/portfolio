@@ -19,7 +19,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects">
+    <div id="projects" className="projects">
       <h1>Personal Projects</h1>
       <div className="projects-grid">
         <div className="project-container">

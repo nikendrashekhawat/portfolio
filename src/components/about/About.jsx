@@ -61,7 +61,7 @@ const About = () => {
 
   return (
     <ErrorBoundary>
-      <div className="about">
+      <div id="about" className="about">
         <div className="about-header">
           <h1>Hi, a little about <span>me</span>!</h1>
           <div className="about-para">
