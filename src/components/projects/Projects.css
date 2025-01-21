@@ -88,7 +88,7 @@
 }
 .project-overlay .project-tool-chip {
     color: rgb(39, 40, 34) !important;
-    background-color: rgb(253, 232, 216) !important;
+    background-color: #f7f1e8 !important;
     font-size: 0.9rem !important;
     height: 25px !important;
 
@@ -121,7 +121,7 @@
     font-size: 24px;
 }
 .project-link-icons a{
-    color: #e0e0e0;
+    color: #f7f1e8;
 }
 .project-link{
     transition: 0.5s ease;
@@ -142,7 +142,7 @@
     gap: 2px; 
     padding: 10px;
     background-color: #313131;
-    color: #fff;
+    color: #f7f1e8;
     border: none;
     border-radius: 10px;
     cursor: pointer;
