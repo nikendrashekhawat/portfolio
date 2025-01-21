@@ -96,7 +96,7 @@ const Navbar = () => {
         <div className="scroll-progress"></div>
       </div>
       <div id="nav-bar" className={`nav-bar ${isScrolling ? 'is-scrolling' : ''}`}>
-        <img src={logo} alt="" />
+        <AnchorLink className='anchor-link' href='#profile' ><img src={logo} alt="" /></AnchorLink>
         <ul className="nav-menu">
           {menuItems.map((item) => (
             <li
