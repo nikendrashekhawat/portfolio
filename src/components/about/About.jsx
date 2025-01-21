@@ -68,7 +68,7 @@ const About = () => {
               various projects in financial, logistics, retail, sales, inventory, and marketing.
             </p>  
             <p>Moreover, I spend my time working on real-world Machine Learning projects. On my inquisitive side, I also have a keen 
-              interest in DNN and Computer Vision.
+              interest in Deep Learning and Computer Vision.
             </p>
           </div>
         </div>
