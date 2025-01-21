@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faInstagram, faXTwitter, faFacebookF, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
@@ -6,7 +6,8 @@ import './Contact.css'
 
 const Contact = () => {
 
-  const [result, setResult] = React.useState("");
+  const [result, setResult] = useState("");
+  const [errors, setErrors] = useState({});
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -16,10 +17,17 @@ const Contact = () => {
     const email = formData.get('email');
     const message = formData.get('message');
 
-    if (!name || !email || !message) {
-      alert("Missing information.\nPlease fill in all the fields before submitting.");
-      setResult("Missing information.\nPlease fill in all the fields before submitting.");
-      return;
+    const newErrors = {}; 
+    if (!name) newErrors.name = "*Please enter your name."; 
+    if (!email) newErrors.email = "*Please enter your email/phone#."; 
+    if (!message) newErrors.message = "*Please enter your message."; 
+    
+    if (Object.keys(newErrors).length > 0) { 
+      setErrors(newErrors);
+      setResult("Missing information. Please fill in all the fields before submitting."); 
+      return; 
+    } else { 
+      setErrors({});
     }
 
     setResult("Sending....");
@@ -84,15 +92,19 @@ const Contact = () => {
           <form onSubmit={onSubmit} className="contact-right-form">
             <div className="contact-details">
               <label htmlFor="">Your Name</label>
-              <input type="text" name="name" id="name" placeholder='Enter your name'/>
+              <input type="text" name="name" id="name" placeholder='Enter your name' className={errors.name ? 'error' : ''}/>
+              {errors.name && <span className="error-message">{errors.name}</span>}
             </div>
             <div className="contact-details">
               <label htmlFor="">Your Contact</label>
-              <input type="text" name="email" id="email" placeholder='Enter your email / phone#'/>
+              <input type="text" name="email" id="email" placeholder='Enter your email / phone#' className={errors.email ? 'error' : ''}/>
+              {errors.email && <span className="error-message">{errors.email}</span>}
             </div>
             <div className="contact-details">
               <label htmlFor="">Your Message</label>
-              <textarea name="message" id="message" rows="10" placeholder="Enter your message"></textarea>
+              <textarea name="message" id="message" rows="10" placeholder="Enter your message" className={errors.message ? 'error' : ''}></textarea>
+              {errors.message && <span className="error-message">{errors.message}</span>}
+
             </div>
             <button type="submit" className='contact-submit'>
               <p>Send now</p>

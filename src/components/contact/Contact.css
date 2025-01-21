@@ -103,7 +103,6 @@
         color: #e7ded1;
         font-family: 'outfit', sans-serif;
         font-size: 18px;
-
     }
 
     textarea {
@@ -117,6 +116,13 @@
         font-size: 18px;
 
     }
+}
+.error { 
+    border: 2px solid red !important; 
+} 
+.error-message { 
+    color: red; 
+    font-size: 0.9em
 }
 .contact-submit{
     display: flex;
