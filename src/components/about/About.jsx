@@ -67,7 +67,7 @@ const About = () => {
               I have been working in business and data analytics for the past 4 years. I have worked on 
               various projects in financial, logistics, retail, sales, inventory, and marketing.
             </p>  
-            <p>Moreover, I spend my time working on real-world Machine Learning projects. On my inquisitive side, I also have a keen 
+            <p>Additionally, I dedicate my time to real-world Machine Learning projects. On my inquisitive side, I also have a keen 
               interest in Deep Learning and Computer Vision.
             </p>
           </div>
