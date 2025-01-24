@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #201f2086;
+    background-color: var(--background-second);
     padding-top: 0px;
     padding-bottom: 10px;
     gap: 10px;
@@ -35,7 +35,7 @@
 .footer-icons a{
     cursor: pointer;
     font-size: 26px;
-    color: #e0e0e0;
+    color: var(--text);
 }
 .footer-icon{
     transition: transform 0.3s ease;
