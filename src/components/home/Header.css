@@ -117,7 +117,7 @@
 }
 .profile-connect-resume:hover{
     transform: scale(1.05);
-    border-color: #f83f0b;
+    border-color: var(--text-border-color);
     background: var(--text-gradient);
     background-clip: text;
     -webkit-background-clip: text;
