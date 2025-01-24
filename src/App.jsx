@@ -1,4 +1,4 @@
-import React, { useEffect, useRef} from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './components/navbar/Navbar'
 import Profile from './components/home/Header'
 import About from './components/about/About'
@@ -8,6 +8,22 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 const App = () => {
+  const [theme, setTheme] = useState(() => {
+    // Get theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, []);
+
 
   useEffect(() => {
     const handleRefresh = () => {
@@ -34,7 +50,7 @@ const App = () => {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar theme={theme} toggleTheme={toggleTheme}/>
       <Profile/>
       <About/>
       <Experience/>
