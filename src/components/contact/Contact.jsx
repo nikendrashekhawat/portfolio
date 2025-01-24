@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedinIn, faInstagram, faXTwitter, faFacebookF, faTelegram } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 import './Contact.css'
 
@@ -72,10 +72,6 @@ const Contact = () => {
                 <a href="https://www.linkedin.com/in/nikendrashekhawat/"><p>nikendrashekhawat</p></a>
               </div>
               <div className="contact-method-social">
-                <a href="https://t.me/nikendrashekhawat"><FontAwesomeIcon className='contact-icon' icon={faTelegram} />/</a>
-                <a href="https://t.me/nikendrashekhawat"><p>nikendrashekhawat</p></a>
-              </div>
-              <div className="contact-method-social">
                 <a href="https://www.instagram.com/nikendrashekhawat"><FontAwesomeIcon className='contact-icon' icon={faInstagram} />/</a>
                 <a href="https://www.instagram.com/nikendrashekhawat"><p>nikendrashekhawat</p> </a>
               </div>
@@ -83,26 +79,22 @@ const Contact = () => {
                 <a href="https://www.x.com/nikendrr"><FontAwesomeIcon className='contact-icon' icon={faXTwitter} />/</a>
                 <a href="https://www.x.com/nikendrr"><p>nikendrr</p> </a>
               </div>
-              <div className="contact-method-social">
-                <a href="https://www.facebook.com/nikendrr"><FontAwesomeIcon className='contact-icon' icon={faFacebookF} />/</a>
-                <a href="https://www.facebook.com/nikendrr"><p>nikendrr</p></a>
-              </div>
             </div>
           </div>
           <form onSubmit={onSubmit} className="contact-right-form">
             <div className="contact-details">
               <label htmlFor="">Your Name</label>
-              <input type="text" name="name" id="name" placeholder='Enter your name' className={errors.name ? 'error' : ''}/>
+              <input type="text" name="name" id="name" placeholder='Name' className={errors.name ? 'error' : ''}/>
               {errors.name && <span className="error-message">{errors.name}</span>}
             </div>
             <div className="contact-details">
               <label htmlFor="">Your Contact</label>
-              <input type="text" name="email" id="email" placeholder='Enter your email / phone#' className={errors.email ? 'error' : ''}/>
+              <input type="text" name="email" id="email" placeholder='Email / Phone#' className={errors.email ? 'error' : ''}/>
               {errors.email && <span className="error-message">{errors.email}</span>}
             </div>
             <div className="contact-details">
               <label htmlFor="">Your Message</label>
-              <textarea name="message" id="message" rows="10" placeholder="Enter your message" className={errors.message ? 'error' : ''}></textarea>
+              <textarea name="message" id="message" rows="10" placeholder="Message" className={errors.message ? 'error' : ''}></textarea>
               {errors.message && <span className="error-message">{errors.message}</span>}
 
             </div>
