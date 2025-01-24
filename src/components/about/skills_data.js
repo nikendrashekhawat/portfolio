@@ -4,16 +4,13 @@ import certificate_3 from '../../assets/certificate_3.png'
 
 
 const main_tools = [
-  "SQL",
   "PostgreSQL",
   "MySQL",
-  "MongoDB",
   "Python",
   "R",
   "Excel",
   "Tableau",
   "PowerBI",
-  "QGIS"
 ];
 
 const python_libraries = [
@@ -22,14 +19,11 @@ const python_libraries = [
   "SciPy",
   "Matplotlib",
   "Seaborn",
-  "Plotly",
   "Dask",
   "NLTK",
-  "SpaCy",
   "Scikit-learn",
-  "Tensorflow",
   "Keras",
-  "PyTorch",
+  "Tensorflow",
   "OpenCV"
 ];
 
