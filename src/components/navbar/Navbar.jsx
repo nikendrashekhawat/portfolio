@@ -11,7 +11,7 @@ const Navbar = () => {
 
   // Scroll settings
   const scrollDuration = 1000; // ms
-  const intersectionThreshold = 0.4; // 40% visibility required
+  const intersectionThreshold = 0.3; // 30% visibility required
   const navbarHeight = 80; // px
   const scrollOffset = 50; // px
 
