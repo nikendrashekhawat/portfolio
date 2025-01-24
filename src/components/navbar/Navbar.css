@@ -6,8 +6,9 @@
     width: 100%;
     position: fixed;
     z-index: 1000;
-    background: linear-gradient(#161513, #161513);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: var(--nav-bg);
+    box-shadow: var(--nav-shadow);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-bar img {
@@ -38,32 +39,40 @@
 }
 .anchor-link{
     text-decoration: none;
-    color: #f7f1e8;
+    color: var(--text);
 }
 .nav-menu li:hover:not(.active) {
     transform: scale(1.1);
-    background: linear-gradient(267deg, #571183 10%, #f83f0b 70%);
+    background: var(--text-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .nav-menu li.active {
     transform: scale(1.1);
-    background: linear-gradient(267deg, #571183 10%, #f83f0b 70%);
+    background: var(--text-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.nav-theme{
-    padding: 15px 40px;
-    font-size: 30px;
+.nav-theme-toggle {
+    margin-right: 40px;
+    padding: 12px;
+    background: none;
     cursor: pointer;
-    transition: 0.5s;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.nav-theme:hover{
-    transform: scale(1.05);
+.nav-theme-toggle:hover {
+    transform: scale(1.1);
+    transform: rotate(360deg);
 }
-
+.theme-icon {
+    color: var(--text);
+    transition: transform 0.5s ease;
+}
 .scroll-progress-container {
     position: fixed;
     top: 0;
@@ -95,8 +104,11 @@
 .nav-item.active .anchor-link,
 .nav-item:hover .anchor-link {
   transform: translateY(-2px);
-  background: linear-gradient(267deg, #571183 10%, #f83f0b 70%);
+  background: var(--text-gradient);;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+[data-theme="light"] .scroll-progress-container {
+    background: rgba(0, 0, 0, 0.1);
+  }
