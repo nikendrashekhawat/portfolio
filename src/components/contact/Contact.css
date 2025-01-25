@@ -29,7 +29,7 @@
 }
 .contact-left h2 span{
     font-size: 44px;
-    background: linear-gradient(90deg, #f83f0b 30%, #571183 100%);
+    background: var(--text-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -54,7 +54,7 @@
 }
 .contact-method-social a {
     text-decoration: none;
-    color: #f7f1e8;
+    color: var(--text);
 }
 .contact-icon{
     font-size: 18px;
@@ -63,14 +63,14 @@
 }
 .contact-icon:hover {
     transform: scale(1.1);
-    color: #e73604;
+    color: var(--text-border-color);
 }
 .contact-method-social p{
     transition: background 0.3s ease, transform 0.3s ease;
 }
 .contact-method-social p:hover{
     transform: scale(1.02);
-    background: linear-gradient(90deg, #f83f0b 30%, #571183 100%);
+    background: var(--text-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -99,8 +99,8 @@
         height: 70px;
         padding-left: 20px;
         border-radius: 5px;
-        background: #313132;
-        color: #e7ded1;
+        background: var(--input-bg-color);
+        color: var(--text);
         font-family: 'outfit', sans-serif;
         font-size: 18px;
     }
@@ -110,8 +110,8 @@
         width: 600px;
         border: none;
         border-radius: 5px;
-        background: #313132;
-        color: #e7ded1;
+        background: var(--input-bg-color);
+        color: var(--text);
         font-family: 'output', sans-serif;
         font-size: 18px;
 
@@ -131,9 +131,9 @@
     gap: 10px;
     padding: 12px 20px;
     border: none;
-    color: white;
+    color: var(--text);
     border-radius: 50px;
-    background: rgb(69, 69, 69);
+    background: var(--submit-bg-color);
     font-size: 20px;
     margin-bottom: 50px;
     cursor: pointer;

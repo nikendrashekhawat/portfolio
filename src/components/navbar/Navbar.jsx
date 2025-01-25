@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faToggleOn} from '@fortawesome/free-solid-svg-icons';
+import { Sun, Moon } from 'lucide-react';
 import './Navbar.css';
 import logo from '../../assets/logo_dark.png';
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
   const [activeMenu, setActiveItem] = useState('Home');
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -123,9 +122,13 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="nav-theme">
-          <FontAwesomeIcon className="nav-theme-toggle-dark" icon={faToggleOn}/>
-        </div>
+        <button className="nav-theme-toggle" onClick={toggleTheme} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}>
+        {theme === 'dark' ? (
+            <Sun size={28} className="theme-icon" />
+          ) : (
+            <Moon size={28} className="theme-icon" />
+          )}
+        </button>
       </div>
     </>
   );
