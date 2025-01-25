@@ -22,20 +22,19 @@
 }
 .job-description{
     background: transparent;
-    border: 3px solid #f7f1e8;
+    border: 3px solid var(--text);
     cursor: pointer;
     border-radius: 8px;
-    transition: transform 0.5s ease, background 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, color 0.5s ease;
+    transition: transform 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, color 0.5s ease;
 }
 .job-description:hover {
     transform: scale(1.03);
-    background: linear-gradient(rgba(69, 18, 101, 0.350), #c3380e 110%);
-    border-color: #f83e0ba7;
-    box-shadow: 0 5px 15px rgb(248, 63, 11), 0 0 15px 10px rgba(255, 0, 150, 0.2);
+    border-color: #e53200;
+    box-shadow: var(--job-description-box-shadow);
 }
-.job .job-date{
+.job-date{
     font-family: 'outline', monospace;
-    color: #f7f1e8 !important;
+    color: var(--text) !important;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -46,11 +45,12 @@
     font-size: 22px;
 }
 .job-icon{
-    background: linear-gradient(270deg, #f83f0b 10%, #571183 100%);
+    color: #f7f1e8;
+    background: var(--background-gradient);
 }
-.job .job-tool-chip {
+.job-tool-chip {
     color: rgb(39, 40, 34) !important;
-    background-color: #f7f1e8 !important;
+    background-color: var(--flex-chip-bg-color) !important;
     font-size: 0.9rem !important;
     height: 25px !important;
 
@@ -74,25 +74,10 @@
 .job-tool-flex-chips .MuiChip-root:hover {
     transform: scale(1.04);
 }
+.vertical-timeline-element-content-arrow {
+    border-right: 10px solid var(--text);
 
-.timeline-graduation .job-tool-chip {
-    color: rgb(39, 40, 34) !important;
-    background-color: #f7f1e8 !important;
-    font-size: 0.9rem !important;
-    height: 25px !important;
-
-    span {
-        font-family: 'Courier Prime', monospace;
-        color: rgb(39, 40, 34);
-    }
-  
-    svg {
-        height: 15px !important;
-    }
 }
-.timeline-graduation .job-date{
-    font-family: 'outline', monospace;
-    color: #f7f1e8 !important;
-    margin-left: 20px;
-    margin-right: 20px;
+.job-description:hover .vertical-timeline-element-content-arrow {
+    border-right: 10px solid var(--job-content-arrow-color);
 }

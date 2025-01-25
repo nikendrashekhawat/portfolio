@@ -7,6 +7,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import Chip from '@mui/material/Chip';
 import './Experience.css';
 import work_history from './work_history_data';
+import { colors } from '@mui/material';
 
 const Experience = () => {
         const reversedWorkHistory = [...work_history].reverse(); 
@@ -20,7 +21,6 @@ const Experience = () => {
                                 <VerticalTimelineElement
                                         key={job_history.id || index} // Use `id` if available, fallback to `index`
                                         className="job"
-                                        contentArrowStyle={{ borderRight: '10px solid white' }}
                                         textClassName="job-description"
                                         dateClassName="job-date"
                                         date={job_history.date}
@@ -42,8 +42,7 @@ const Experience = () => {
                                 <p>No work history available.</p>
                         )}
                                 <VerticalTimelineElement
-                                        className="timeline-graduation"
-                                        contentArrowStyle={{ borderRight: '10px solid  white' }}
+                                        className="graduation"
                                         textClassName="job-description"
                                         dateClassName="job-date"
                                         date="May 2014 – Sep 2018"
