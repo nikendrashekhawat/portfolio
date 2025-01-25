@@ -108,6 +108,48 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 [data-theme="light"] .scroll-progress-container {
     background: rgba(0, 0, 0, 0.1);
+}
+.mobile-nav-icon-open, .mobile-nav-icon-close {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .nav-bar{
+        padding: 20px 40px;
+    }
+    
+    .nav-bar img {
+        display: none;
+    }
+    .mobile-nav-icon-open{
+        display: block;
+        position: fixed;
+    }
+    .mobile-nav-icon-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        width: 30px;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0px;
+        gap: 80px;
+        background-color: var(--mob-nav-menu-bg-color);
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: left 0.5s ease;
+        left: -400px;
+    }
+    .nav-theme-toggle {
+        margin-right: 0px;
+    }
+
   }

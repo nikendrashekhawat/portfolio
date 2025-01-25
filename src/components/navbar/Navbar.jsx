@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { Sun, Moon } from 'lucide-react';
 import './Navbar.css';
 import logo from '../../assets/logo_dark.png';
@@ -7,6 +9,15 @@ import logo from '../../assets/logo_dark.png';
 const Navbar = ({ theme, toggleTheme }) => {
   const [activeMenu, setActiveItem] = useState('Home');
   const [isScrolling, setIsScrolling] = useState(false);
+  const menuRef = useRef();
+
+  //Open and Close Menu
+  const openMenu = () => {
+    menuRef.current.style.left="0px";
+  }
+  const closeMenu = () => {
+    menuRef.current.style.left="-400px";
+  }
 
   // Scroll settings
   const scrollDuration = 1000; // ms
@@ -96,7 +107,9 @@ const Navbar = ({ theme, toggleTheme }) => {
       </div>
       <div id="nav-bar" className={`nav-bar ${isScrolling ? 'is-scrolling' : ''}`}>
         <AnchorLink className='anchor-link' href='#profile' ><img src={logo} alt="" /></AnchorLink>
-        <ul className="nav-menu">
+        <FontAwesomeIcon className='mobile-nav-icon-open' onClick={openMenu} icon={faBars} size='2x'/>
+        <ul className="nav-menu" ref={menuRef} >
+        <FontAwesomeIcon className='mobile-nav-icon-close' onClick={closeMenu} icon={faXmark} size='2x'/>
           {menuItems.map((item) => (
             <li
               key={item.name}
