@@ -158,7 +158,8 @@
         font-size: 36px;
     }
     .contact-section{
-        flex-direction: column;
+        display: contents;
+        align-items: center;
         gap: 50px;
     }
     .contact-left h2 span{
@@ -173,7 +174,6 @@
     .contact-method-social p{
         font-size: 18px;
     }
-
     .contact-right-form .contact-details{
         label{
             font-size: 20px;
@@ -181,10 +181,14 @@
     
         input {
             font-size: 16px;
+            width: 350px;
+            height: 50px;
         }
     
         textarea {
             font-size: 16px;
+            padding: 20px;
+            width: 350px;
     
         }
     }
