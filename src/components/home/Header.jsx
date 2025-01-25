@@ -21,7 +21,7 @@ const Profile = () => {
     <div id="profile" className='profile'>
         <div className='profile-picture'><img src={profile_image} alt="" /></div>
         <div className='profile-info'>
-          <div className="profile-icons">
+          <div className="profile-icons-top">
             <a href="https://www.github.com/nikendrashekhawat"> <FontAwesomeIcon className="profile-icon" icon={faSquareGithub} /></a>
             <a href="https://www.linkedin.com/in/nikendrashekhawat/"> <FontAwesomeIcon className="profile-icon" icon={faLinkedin} /></a>
           </div>
@@ -30,9 +30,8 @@ const Profile = () => {
           <div className="profile-connect">
             <AnchorLink className='anchor-link' offset='50' href='#contact'>
               <div className="profile-connect-contact">
-                  <p>Connect with me</p>
-                  
-                </div>
+                <p>Connect with me</p>
+              </div>
             </AnchorLink>
             <div 
             className="profile-connect-resume"
@@ -44,6 +43,10 @@ const Profile = () => {
               <FontAwesomeIcon className='download-icon-resume' icon={faFileArrowDown}/>
             </div>
           </div>
+          <div className="profile-icons-bottom">
+          <a href="https://www.github.com/nikendrashekhawat"> <FontAwesomeIcon className="profile-icon" icon={faSquareGithub} /></a>
+          <a href="https://www.linkedin.com/in/nikendrashekhawat/"> <FontAwesomeIcon className="profile-icon" icon={faLinkedin} /></a>
+        </div>
         </div>
     </div>
   )
