@@ -142,7 +142,7 @@
         position: relative;
     }
     .profile-picture img {
-        width: 300px;
+        width: 250px;
         background-size: cover;
     }
     .profile-info {
@@ -160,7 +160,7 @@
         padding-top: 30px;
     }
     .profile-info h1{
-        font-size: 50px;
+        font-size: 44px;
         text-align: left;
     }
     .profile-info p{
