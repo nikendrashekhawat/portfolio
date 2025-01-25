@@ -205,3 +205,55 @@
     font-weight: 500;
     font-family: "outfit", sans-serif;
 }
+
+
+@media (max-width: 768px) {
+    .about {
+        padding: 100px;
+        gap: 50px;
+    }
+    .about-header h1{
+        font-size: 36px;
+    }
+    .about-para{
+        text-align: center;
+        font-size: 18px;
+    }
+    .about-expertise{
+        gap: 20px;
+    }
+    .about-expertise h1{
+        font-size: 28px;
+    }
+    .skill-grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .skills{
+        gap: 10px;
+    }
+    .skills .title{
+        font-size: 20px;
+    }
+    .skills svg {
+        font-size: 22px;
+    }
+
+    .about-certifications {
+        gap: 30px;
+    }
+    
+    .about-certifications h1 {
+        font-size: 28px;
+    }
+    
+    .arrow-button-icon{
+        font-size: 20px;
+
+    }
+    .certifications-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    
+}

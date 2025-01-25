@@ -80,7 +80,6 @@ const About = () => {
                 <FontAwesomeIcon className='expertise-icon' icon={faLaptopCode} />
                 <h3>Tools</h3>
               </div>
-              <p></p>
               <div className="flex-chips">
                   {main_tools.map((label, index) => (
                     <Chip key={index} className='chip' label={label} />
@@ -92,7 +91,6 @@ const About = () => {
                 <FontAwesomeIcon className='expertise-icon' icon={faPython} />
                 <h3>Frameworks</h3>
               </div>
-              <p></p>
               <div className="flex-chips">
                 {python_libraries.map((label, index) => (
                     <Chip key={index} className='chip' label={label} />
@@ -104,7 +102,6 @@ const About = () => {
                 <FontAwesomeIcon className='expertise-icon' icon={faDocker} />
                 <h3>MLOps</h3>
               </div>
-              <p></p>
               <div className="flex-chips">
                   {devops_tools.map((label, index) => (
                     <Chip key={index} className='chip' label={label} />
@@ -116,7 +113,6 @@ const About = () => {
                 <FontAwesomeIcon className='expertise-icon' icon={faCloud} />
                 <h3>Cloud</h3>
               </div>
-              <p></p>
               <div className="flex-chips">
                   {cloudtools.map((label, index) => (
                     <Chip key={index} className='chip' label={label} />
@@ -130,7 +126,7 @@ const About = () => {
             <div className="certifications-grid-container">
             <div className="arrow-button">
                 <button className="arrow-button-left" onClick={handleNext}>
-                  <FontAwesomeIcon icon={faAngleLeft} size='2x' />
+                  <FontAwesomeIcon className='arrow-button-icon' icon={faAngleLeft} size='2x' />
                 </button>
               </div>
               <div className="certifications-grid">
@@ -145,7 +141,7 @@ const About = () => {
               </div>
               <div className="arrow-button">
                 <button className="arrow-button-right" onClick={handlePrev}>
-                  <FontAwesomeIcon icon={faAngleRight} size='2x' />
+                  <FontAwesomeIcon className='arrow-button-icon' icon={faAngleRight} size='2x' />
                 </button>
               </div>
             </div>
