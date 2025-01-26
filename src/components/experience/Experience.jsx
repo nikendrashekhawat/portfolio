@@ -30,12 +30,6 @@ const Experience = () => {
                                         <h3 className="job-title">{job_history.title}</h3>
                                         <h4 className="job-city">{job_history.city}</h4>
                                         <p className="job-duties">{job_history.description}</p>
-                                        <div className="job-tool-flex-chips">
-                                        {job_history.tools &&
-                                                job_history.tools.map((tool, index) => (
-                                                <Chip key={index} className="job-tool-chip" label={tool} />
-                                                ))}
-                                        </div>
                                 </VerticalTimelineElement>
                                 ))
                         ) : (
@@ -51,11 +45,6 @@ const Experience = () => {
                                         >
                                         <h3 className="job-title">Seneca College, Toronto</h3>
                                         <p className="job-duties">Bachelors in Electronics Engineering</p>
-                                        <div className="job-tool-flex-chips">
-                                        {['Electromagnetics', 'Communications', 'Robotics', 'Embedding System', 'Digital System Design', 'C', 'C++', 'Python'].map((tool, index) => (
-                                                <Chip key={index} className="job-tool-chip" label={tool} />
-                                                ))}
-                                        </div>
                                 </VerticalTimelineElement>
                         </VerticalTimeline>
                 </div>
