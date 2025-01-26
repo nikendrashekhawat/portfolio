@@ -6,7 +6,8 @@ dotenv.config()
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/portfolio/',
   define: {
-    'process.env': process.env
+    'process.env': process.env,
   }
-})
+});
