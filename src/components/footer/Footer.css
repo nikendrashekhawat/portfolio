@@ -43,3 +43,24 @@
 .footer-icon:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 80px;
+        padding-bottom: 10px;
+        padding-top: 0px;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer {
+        padding: 20px;
+        padding-bottom: 10px;
+        padding-top: 0px;
+        gap: 5px;
+    }
+    .footer-icons a{
+        font-size: 22px;
+    }
+}
