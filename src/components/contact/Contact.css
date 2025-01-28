@@ -151,8 +151,10 @@
 
 @media (max-width: 768px) {
     .contact {
-        padding: 100px;
+        padding: 80px;
         gap: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .contact h1{
         font-size: 36px;
@@ -180,15 +182,15 @@
         }
     
         input {
-            font-size: 16px;
-            width: 450px;
+            font-size: 18px;
+            width: 400px;
             height: 50px;
         }
     
         textarea {
-            font-size: 16px;
+            font-size: 18px;
             padding: 20px;
-            width: 450px;
+            width: 400px;
     
         }
     }
@@ -197,6 +199,59 @@
     
         .submit-icon{
             font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .contact {
+        padding: 50px;
+        gap: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .contact h1{
+        font-size: 30px;
+    }
+    .contact-section{
+        align-items: center;
+        gap: 50px;
+    }
+    .contact-left h2 span{
+        font-size: 24px;
+    }
+    .contact-left .contact-para{
+        font-size: 16px;
+    }
+    .contact-icon{
+        font-size: 16px;
+    }
+    .contact-method-social p{
+        font-size: 16px;
+    }
+    .contact-right-form .contact-details{
+        label{
+            font-size: 18px;
+        }
+    
+        input {
+            font-size: 16px;
+            width: 280px;
+            height: 50px;
+        }
+    
+        textarea {
+            font-size: 16px;
+            padding: 20px;
+            width: 280px;
+    
+        }
+    }
+    .contact-submit{
+        font-size: 16px;
+    
+        .submit-icon{
+            font-size: 14px;
         }
     }
 }
