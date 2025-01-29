@@ -26,7 +26,7 @@ const projects_data = [
         bg_image: project_3,
         title: 'Portfolio Website',
         description: 'A personal portfolio website that showcases my projects and experience.',
-        tools: ['HTML', 'CSS', 'React JS', 'JavaScript'],
+        tools: ['HTML', 'CSS', 'ReactJS', 'JavaScript'],
         link: 'https://www.linkedin.com/in/nikendrashekhawat/',
         github:'https://www.github.com/nikendrashekhawat'
     }
