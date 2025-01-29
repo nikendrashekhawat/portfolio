@@ -206,11 +206,12 @@
     font-family: "outfit", sans-serif;
 }
 
-
 @media (max-width: 768px) {
     .about {
-        padding: 100px;
+        padding: 80px;
         gap: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .about-header h1{
         font-size: 36px;
@@ -254,6 +255,65 @@
     .certifications-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+    } 
+}
+
+@media (max-width: 360px) {
+    .about {
+        padding: 50px;
+        gap: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .about-header h1{
+        font-size: 30px;
+    }
+    .about-para{
+        text-align: left;
+        font-size: 18px;
+    }
+    .about-expertise{
+        gap: 20px;
+    }
+    .about-expertise h1{
+        font-size: 26px;
+    }
+    .skill-grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .skills{
+        gap: 10px;
+    }
+    .skills .title{
+        font-size: 20px;
+    }
+    .skills svg {
+        font-size: 22px;
+    }
+
+    .chip {
+        font-size: 0.8rem !important;
+    }
+    .about-certifications {
+        display: none;
+        gap: 30px;
+    }
+    
+    .about-certifications h1 {
+        font-size: 1.7em;
+    }
+    
+    .arrow-button-icon{
+        font-size: 20px;
+
+    }
+    .certifications-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .certification {
+        width: 16em;
     }
     
 }
