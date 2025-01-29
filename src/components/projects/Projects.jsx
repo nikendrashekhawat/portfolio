@@ -38,12 +38,8 @@ const Projects = () => {
                     ))}
                   </div>
                   <div className="project-link-icons">
-                    <a href={project.link}>
-                      <FontAwesomeIcon className="project-link" icon={faArrowUpRightFromSquare} />
-                    </a>
-                    <a href={project.github}>
-                      <FontAwesomeIcon className="project-code" icon={faFileCode} />
-                    </a>
+                    <a href={project.link} target='_blank'><p>Visit Link</p><FontAwesomeIcon className='project-icon' icon={faArrowUpRightFromSquare} /></a>
+                    <a href={project.github} target='_blank'><p>View Code</p><FontAwesomeIcon className='project-icon' icon={faFileCode} /></a>
                   </div>
                 </div>
                 <h3 className="project-title">{project.title}</h3>

@@ -46,10 +46,12 @@
     width: 100%;
     height: 85%;
     object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+.project-box:hover .project-box img{
+    opacity: 0.4;
 }
 .project-title {
-    padding-left: 10px;
-    padding-right: 10px;
     font-family: 'outfit', sans-serif;
     font-size: 20px;
     transition: opacity 0.5s ease;
@@ -90,7 +92,7 @@
 .project-overlay .project-tool-chip {
     color: rgb(39, 40, 34) !important;
     background-color: #f7f1e8 !important;
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
     height: 25px !important;
 
     span {
@@ -113,28 +115,35 @@
 .project-overlay .project-flex-chips .MuiChip-root:hover {
     transform: scale(1.02);
 }
-
 .project-link-icons{
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    gap: 20px;
-    font-size: 24px;
+    align-items: center;
+    gap: 30px;
 }
 .project-link-icons a{
-    color: #f7f1e8;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    color: #f8f3f3;
+    cursor: pointer;
+    transition: 0.3s ease, color 0.3s ease;
 }
-.project-link{
-    transition: 0.5s ease;
+.project-link-icons a p{
+    font-size: 16px;
 }
-.project-link:hover{
-    transform: scale(1.1);
+.project-link-icons a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: #490981;
 }
-.project-code{
-    transition: 0.5s ease;
+.project-icon {
+    font-size: 16px;
+    transition: 0.3s ease, color 0.3s ease;
 }
-.project-code:hover{
-    transform: scale(1.1);
+.project-link-icons a:hover .project-icon{
+    cursor: pointer;
+    color: #490981;
 }
 .show-more-btn {
     display: flex;
@@ -150,22 +159,23 @@
     font-family: 'outfit', sans-serif;
     font-size: 16px;
     transition: transform 0.3s ease;
-  }
+}
   
-  .show-more-btn:hover {
+.show-more-btn:hover {
     transform: scale(1.05);
     background-color: #5f5a5a;
-  }
-  .show-more-icon{
+}
+.show-more-icon{
     font-size: 20px;
-  }
-  
+}
 
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .projects {
-        padding: 100px;
+        padding: 80px;
         gap: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;  
     }
     
     .projects h1 {
@@ -177,5 +187,48 @@
     .project-box{
         width: 400px;
         height: 350px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .projects {
+        padding: 50px;
+        gap: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .projects h1 {
+        font-size: 30px;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .project-title{
+        font-size: 18px;
+    }
+    .project-box{
+        width: 280px;
+        height: 300px;
+        gap: 10px;
+    }
+    .project-overlay{
+        padding: 10px;
+    }
+    .project-overlay h3{
+        font-size: 22px;
+    }
+    .project-overlay p{
+        font-size: 16px;
+    }
+    .project-link-icons a p{
+        font-size: 14px;
+    }
+    .project-overlay .project-tool-chip {
+        font-size: 0.7rem !important;
+    }
+    .project-link-icons{
+        gap: 20px;
     }
 }
