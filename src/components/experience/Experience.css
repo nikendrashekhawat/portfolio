@@ -55,3 +55,44 @@
 .job-description:hover .vertical-timeline-element-content-arrow {
     border-right: 10px solid var(--job-content-arrow-color);
 }
+
+@media (max-width: 768px) {
+    .experience {
+        padding: 80px;
+        gap: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;  
+    }
+    .experience h1 {
+        font-size: 36px;
+    }
+    .job-title{
+        font-size: 20px;
+    }
+    .job-city{
+        font-size: 15px;
+    }
+    .job-description p{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .experience {
+        padding: 20px;
+        gap: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .experience h1 {
+        font-size: 30px;
+    }
+    .job-title{
+        font-size: 18px;
+    }
+    .job-city{
+        font-size: 14px;
+    }
+}
