@@ -21,8 +21,8 @@
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 .nav-bar img:hover {
-    transform: scale(1.1); /* Scale up the image on hover */
-    opacity: 1; /* Change opacity on hover */
+    transform: scale(1.1);
+    opacity: 1;
 }
 .nav-menu{
     display: flex;
@@ -151,5 +151,21 @@
     .nav-theme-toggle {
         margin-right: 0px;
     }
+    .mobile-nav-icon-close, .mobile-nav-icon-open{
+        font-size: 26px;
+    }
 
+  }
+
+@media (max-width: 360px) {
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .mobile-nav-icon-close, .mobile-nav-icon-open{
+        font-size: 22px;
+    }
+    .theme-icon{
+        width: 24px;
+        height: 24px;
+    }
   }
